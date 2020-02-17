@@ -8,7 +8,9 @@ body {
 ::-moz-selection {
   background: #000;
   color: #fff; }
-
+.active{
+  color: #20c997;
+}
 ::selection {
   background: #000;
   color: #fff; }
