@@ -53,7 +53,7 @@ var audio;
 
 function playMusic() {
     if (!playPressed) {
-        audio = new Audio('gallery/music/song.mp3');
+        audio = new Audio('https://saurabhshipra.wedding/gallery/music/song.mp3');
         isPaused = false;
         playPressed = true;
         audio.loop = true;
