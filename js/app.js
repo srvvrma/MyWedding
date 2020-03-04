@@ -47,3 +47,23 @@ $(document).ready(function() {
         }, false);
     })();
 });
+var playPressed = false;
+var isPaused = false;
+var audio;
+
+function playMusic() {
+    if (!playPressed) {
+        audio = new Audio('https://saurabhshipra.wedding/gallery/music/song.mp3');
+        isPaused = false;
+        playPressed = true;
+        audio.loop = true;
+        audio.play();
+    } else {
+        if (!audio.paused) {
+            audio.pause();
+        } else {
+            audio.play();
+        }
+    }
+
+}
